@@ -1,0 +1,64 @@
+body {
+  background-color: #F5EBDB;
+}
+.player1 {
+  background-color: #B3D18F;
+  padding: 20px;
+}
+
+.player2 {
+  background-color: #F1BB46;
+  padding: 20px;
+}
+
+.result {
+  background-color: #F16246;
+  padding: 20px;
+  font-size: 50px;
+  letter-spacing: 8px;
+  margin-top: 40px;
+}
+
+.playAgain {
+  text-align: center;
+  margin-top: 30px;
+}
+button.playAgain {
+  font-size: 40px;
+  padding: 10px 20px 10px 20px;
+  background-color: #F0C984;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  letter-spacing: 8px;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+}
+
+button {
+  border:none;
+  background-color: #F5EBDB;
+}
+
+img {
+  width: 400px;
+  max-width: 100%;
+  min-height: 400px;
+  max-height: 400px;
+}
+
+img:hover {
+  border: 8px solid #D1AF8F;
+  opacity: .7;
+}

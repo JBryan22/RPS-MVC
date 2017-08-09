@@ -2,13 +2,17 @@
   Layout = "_Layout";
 }
 
+<h1>Rock Paper Scissors</h1>
+
 @if (@Model.EvaluatePlay() == "draw")
 {
-  <h1>@Model.EvaluatePlay()!</h1>
+  <h1 class="result">@Model.EvaluatePlay()!</h1>
 }
 else
 {
-  <h1>@Model.EvaluatePlay() Wins!</h1>
+  <h1 class="result">@Model.EvaluatePlay()!</h1>
 }
 
-<a href="/"><button class="btn btn-default">Play again!</button></a>
+<div class="playAgain">
+  <a href="/"><button class="btn btn-default playAgain">Play again!</button></a>
+</div>

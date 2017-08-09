@@ -3,19 +3,22 @@
 }
 
 <h1>Rock Paper Scissors</h1>
-<h2>Player 1 Go!</h2>
 
 <div class="container">
+  <h2 class="player1">Player 1 Go!</h2>
   <div class="row">
     <form action="/player2" method="post">
       <div class="col-md-4">
-        <button type="submit" id="rock" name="selected" value="rock" class="btn btn-default">Rock</button>
+        <button type="submit" id="rock" name="selected" value="rock"><img src="/img/rock.jpg" alt="Photo of Rock"></button>
+        <p>Rock</p>
       </div>
       <div class="col-md-4">
-        <button type="submit" id="paper" name="selected" value="paper" class="btn btn-default">Paper</button>
+        <button type="submit" id="paper" name="selected" value="paper"><img src="/img/paper.jpg" alt="Photo of Paper"></button>
+        <p>Paper</p>
       </div>
       <div class="col-md-4">
-        <button type="submit" id="scissors" name="selected" value="scissors" class="btn btn-default">Scissors</button>
+        <button type="submit" id="scissors" name="selected" value="scissors"><img src="/img/scissors.jpg" alt="Photo of Scissors"></button>
+        <p>Scissors</p>
       </div>
     </form>
   </div>
