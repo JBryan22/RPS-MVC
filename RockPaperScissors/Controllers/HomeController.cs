@@ -13,6 +13,18 @@ namespace RockPaperScissors.Controllers
       return View();
     }
 
+    [HttpGet("/player1")]
+    public ActionResult Player1()
+    {
+      return View();
+    }
+
+    [HttpGet("/computer")]
+    public ActionResult Computer()
+    {
+      return View();
+    }
+
     [HttpPost("/player2")]
     public ActionResult Player2()
     {
@@ -30,6 +42,15 @@ namespace RockPaperScissors.Controllers
       RockPaperScissor myGame = new RockPaperScissor(player1Choice, player2Choice);
 
       return View(myGame);
+    }
+
+    [HttpPost("/2player/results")]
+    public ActionResult OnePlayerResults()
+    {
+      string player1Choice = Request.Form["selected"];
+      RockPaperScissor myGame = new RockPaperScissor(player1Choice);
+      myGame.ComputerChoice();
+      return View("results", myGame);
     }
   }
 }

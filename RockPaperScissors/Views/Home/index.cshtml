@@ -7,13 +7,11 @@
 <div class="container">
   <h2 class="player1">Select Game Mode</h2>
   <div class="row">
-    <form action="/player2" method="post">
       <div class="col-md-6">
-        <button type="submit" id="1player" name="game-mode" value="1player">One Player</button>
+        <a href="/computer"><button type="submit" id="1player" name="game-mode" value="1player" class="btn btn-default playAgain">One Player</button></a>
       </div>
       <div class="col-md-6">
-        <button type="submit" id="2player" name="game-mode" value="2player">Two Player</button>
+        <a href="/player1"><button type="submit" id="2player" name="game-mode" value="2player" class="btn btn-default playAgain right">Two Player</button></a>
       </div>
-    </form>
   </div>
 </div>

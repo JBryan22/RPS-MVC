@@ -1,0 +1,25 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Rock Paper Scissors</h1>
+
+<div class="container">
+  <h2 class="player1">Choose Your Attack!</h2>
+  <div class="row">
+    <form action="/2player/results" method="post">
+      <div class="col-md-4">
+        <button type="submit" id="rock" name="selected" value="rock"><img src="/img/rock.jpg" alt="Photo of Rock"></button>
+        <p>Rock</p>
+      </div>
+      <div class="col-md-4">
+        <button type="submit" id="paper" name="selected" value="paper"><img src="/img/paper.jpg" alt="Photo of Paper"></button>
+        <p>Paper</p>
+      </div>
+      <div class="col-md-4">
+        <button type="submit" id="scissors" name="selected" value="scissors"><img src="/img/scissors.jpg" alt="Photo of Scissors"></button>
+        <p>Scissors</p>
+      </div>
+    </form>
+  </div>
+</div>

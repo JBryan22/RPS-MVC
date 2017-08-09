@@ -9,7 +9,7 @@ namespace RockPaperScissors.Models
     private string _player2;
     private static string _player1Choice;
 
-    public RockPaperScissor(string player1, string player2)
+    public RockPaperScissor(string player1, string player2 = "rock")
     {
       _player1 = player1;
       _player2 = player2;
@@ -23,6 +23,34 @@ namespace RockPaperScissors.Models
     public static string GetPlayer1Choice()
     {
       return _player1Choice;
+    }
+
+    public string GetPlayer2()
+    {
+      return _player2;
+    }
+
+    public string GetPlayer1()
+    {
+      return _player1;
+    }
+
+    public void ComputerChoice()
+    {
+      Random myRand = new Random();
+      int compChoice = myRand.Next(1,4);
+      if (compChoice == 1)
+      {
+        _player2 = "rock";
+      }
+      else if (compChoice == 2)
+      {
+        _player2 = "paper";
+      }
+      else if (compChoice == 3)
+      {
+        _player2 = "scissors";
+      }
     }
 
     public string EvaluatePlay()

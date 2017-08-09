@@ -62,3 +62,12 @@ img:hover {
   border: 8px solid #D1AF8F;
   opacity: .7;
 }
+
+.resultChoice {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.right {
+  float: right;
+}

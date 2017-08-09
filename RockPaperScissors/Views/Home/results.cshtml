@@ -13,6 +13,15 @@ else
   <h1 class="result">@Model.EvaluatePlay()!</h1>
 }
 
+<div class="row">
+  <div class="col-md-6">
+    <h2 class="resultChoice"><strong>Player One Chose:</strong> @Model.GetPlayer1()</h2>
+  </div>
+  <div class="col-md-6">
+    <h2 class="resultChoice"><strong>Player Two Chose:</strong> @Model.GetPlayer2()</h2>
+  </div>
+</div>
+
 <div class="playAgain">
   <a href="/"><button class="btn btn-default playAgain">Play again!</button></a>
 </div>
