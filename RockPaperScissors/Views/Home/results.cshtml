@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+
+@if (@Model.EvaluatePlay() == "draw")
+{
+  <h1>@Model.EvaluatePlay()!</h1>
+}
+else
+{
+  <h1>@Model.EvaluatePlay() Wins!</h1>
+}
+
+<a href="/"><button class="btn btn-default">Play again!</button></a>

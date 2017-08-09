@@ -7,11 +7,22 @@ namespace RockPaperScissors.Models
   {
     private string _player1;
     private string _player2;
+    private static string _player1Choice;
 
     public RockPaperScissor(string player1, string player2)
     {
       _player1 = player1;
       _player2 = player2;
+    }
+
+    public static void SetPlayer1Choice(string newChoice)
+    {
+      _player1Choice = newChoice;
+    }
+
+    public static string GetPlayer1Choice()
+    {
+      return _player1Choice;
     }
 
     public string EvaluatePlay()
